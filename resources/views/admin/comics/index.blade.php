@@ -27,7 +27,11 @@
           <a class="btn btn-warning" href="{{ route('admin.comics.edit', $comic) }}">EDIT</a>
         </td>
         <td>
-          <a class="btn btn-danger" href="#">DELETE</a>
+          <form action="{{ route('admin.comics.destroy',$comic) }}" method="post">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger" >DELETE</button>
+          </form>
         </td>
       </tr>
     </tbody>

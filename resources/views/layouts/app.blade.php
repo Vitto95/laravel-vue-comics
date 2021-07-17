@@ -53,7 +53,7 @@
                                 <a class="nav-link" href="{{ route('admin.comics.index') }}">Elenco Fumetti</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="#">Nuovo Fumetto</a>
+                                <a class="nav-link" href="{{ route('admin.comics.create') }}">Nuovo Fumetto</a>
                             </li>    
 
                             <li class="nav-item dropdown">

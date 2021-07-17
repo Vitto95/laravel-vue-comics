@@ -10,7 +10,7 @@ class Comic extends Model
         'title',
         'slug',
         'description',
-        'thumb',
+        'image',
         'price',
         'series',
         'sale_date',

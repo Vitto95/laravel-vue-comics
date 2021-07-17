@@ -21,7 +21,7 @@
         <td>{{ $comic->slug }}</td>
         <td>{{ $comic->price }}</td>
         <td>
-          <a class="btn btn-primary" href="#">SHOW</a>
+          <a class="btn btn-primary" href="{{ route('admin.comics.show', $comic) }}">SHOW</a>
         </td>
         <td>
           <a class="btn btn-warning" href="#">EDIT</a>

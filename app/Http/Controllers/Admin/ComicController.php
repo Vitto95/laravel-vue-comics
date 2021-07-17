@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Comic;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class ComicController extends Controller
 {
@@ -26,7 +28,10 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $types = DB::table('comics')
+        ->distinct('type')
+        ->pluck('type');
+        return view('admin.comics.create', compact('types'));
     }
 
     /**
@@ -37,7 +42,13 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $new_comic = new Comic();
+        $new_comic->slug = Str::slug($new_comic->title, '-');
+        $new_comic->fill($data);
+        $new_comic->save();
+
+        return redirect()->route('admin.comics.show', $new_comic);
     }
 
     /**
@@ -48,7 +59,8 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        $comic = Comic::find($id);
+        return view('admin.comics.show', compact('comic'));
     }
 
     /**

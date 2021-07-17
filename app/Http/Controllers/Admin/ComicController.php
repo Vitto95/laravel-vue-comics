@@ -71,7 +71,11 @@ class ComicController extends Controller
      */
     public function edit($id)
     {
-        //
+        $comic = Comic::find($id);
+        $types = DB::table('comics')
+        ->distinct('type')
+        ->pluck('type');
+        return view('admin.comics.edit', compact('comic', 'types'));
     }
 
     /**
@@ -81,9 +85,13 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+        $comic->update($data);
+        /* Creare slug!!! */
+        
+        return redirect()->route('admin.comics.show', $comic);
     }
 
     /**

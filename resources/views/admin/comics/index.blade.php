@@ -24,7 +24,7 @@
           <a class="btn btn-primary" href="{{ route('admin.comics.show', $comic) }}">SHOW</a>
         </td>
         <td>
-          <a class="btn btn-warning" href="#">EDIT</a>
+          <a class="btn btn-warning" href="{{ route('admin.comics.edit', $comic) }}">EDIT</a>
         </td>
         <td>
           <a class="btn btn-danger" href="#">DELETE</a>

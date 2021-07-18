@@ -275,7 +275,7 @@ export default {
     font-weight: 600;
     background-color: #303030;
     border: 2px solid #0282f9;
-    padding: 15px 7px;
+    padding: 15px 15px;
 }
 
 .right-content div {

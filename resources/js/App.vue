@@ -2,6 +2,7 @@
     <div>
         <Header />
         <Jumbotron />
+        <router-view></router-view>
         <Footer />
     </div>
 </template>

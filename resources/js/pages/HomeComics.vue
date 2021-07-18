@@ -1,16 +1,15 @@
 <template>
-    <div>
-        <!-- <h2>hello vue</h2>
-        <h3>HOMECOMICS</h3>
-        <h3>DATI API:</h3> -->
-        <div class="vg-container" v-for="comic in comics" :key="comic.id">
-            <Card :comicObj="comic" />
+    <main>
+        <div class="vg-container">
+            <div
+                class="vg-card-container"
+                v-for="comic in comics"
+                :key="comic.id"
+            >
+                <Card :comicObj="comic" />
+            </div>
         </div>
-
-        <!-- <div>
-            <h2>{{ comic.title }}</h2>
-        </div> -->
-    </div>
+    </main>
 </template>
 
 <script>
@@ -47,4 +46,29 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+    background-color: #1c1c1c;
+}
+
+.vg-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .vg-card-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+    .vg-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media all and (min-width: 1201px) {
+    .vg-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+</style>

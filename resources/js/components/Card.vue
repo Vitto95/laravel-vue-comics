@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="vg-card-outer">
         <img :src="comicObj.image" :alt="comicObj.slug" />
-        <h2>{{ comicObj.title }}</h2>
+        <h4>{{ comicObj.title }}</h4>
     </div>
 </template>
 
@@ -18,4 +18,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.vg-card-outer h4 {
+    text-transform: uppercase;
+    color: white;
+    max-width: 160px;
+    margin-bottom: 2rem;
+}
+</style>

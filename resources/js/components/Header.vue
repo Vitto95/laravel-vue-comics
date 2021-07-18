@@ -65,6 +65,7 @@ header {
         max-width: 1300px;
         margin: 0 auto;
         padding: 10px;
+        padding-bottom: 0;
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -99,7 +100,7 @@ ul {
         align-items: center;
         margin-right: 1rem;
         &:hover {
-            border-bottom: 2px solid black;
+            border-bottom: 3px solid #0282f9;
         }
     }
 }

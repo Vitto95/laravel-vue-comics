@@ -257,6 +257,58 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Footer"
 });
@@ -380,7 +432,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".vg-wrapper-top[data-v-61a7c374] {\n  padding: 4em;\n  background-image: url(\"/img/footer-bg.jpg\");\n  background-size: cover;\n  background-repeat: no-repeat;\n  color: white;\n  /* background-image: url(\"/img/dc-logo-bg.png\"); */\n}\n.vg-wrapper-top .vg-container[data-v-61a7c374] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.vg-wrapper-lists[data-v-61a7c374] {\n  display: flex;\n  width: 63%;\n  height: 350px;\n}\n.vg-logo-bg-right[data-v-61a7c374] {\n  width: 37%;\n  height: 350px;\n  background-image: url(\"/img/dc-logo-bg.png\");\n  background-size: 100%;\n  background-position: center;\n}\n.vg-container-lists[data-v-61a7c374] {\n  margin-right: 5.5rem;\n  margin-bottom: 2.5rem;\n}\n.vg-container-lists ul li[data-v-61a7c374] {\n  margin-bottom: 0.5rem;\n}\n.vg-container-lists ul li a[data-v-61a7c374] {\n  color: white;\n  opacity: 0.5;\n}\n.vg-container-lists ul li a[data-v-61a7c374]:hover {\n  opacity: 1;\n}\n.vg-container-lists ul li .vg-title-list[data-v-61a7c374] {\n  display: inline-block;\n  margin-bottom: 0.8rem;\n  text-transform: uppercase;\n  font-weight: 800;\n  opacity: 1;\n}\n.vg-copyright-cookies a[data-v-61a7c374],\n.vg-copyright-cookies p[data-v-61a7c374] {\n  opacity: 0.5;\n  color: white;\n}\n.vg-copyright-cookies a[data-v-61a7c374]:hover,\n.vg-copyright-cookies p[data-v-61a7c374]:hover {\n  opacity: 1;\n}", ""]);
+exports.push([module.i, ".vg-wrapper-top[data-v-61a7c374] {\n  padding: 4em 0;\n  background-image: url(\"/img/footer-bg.jpg\");\n  background-size: cover;\n  background-repeat: no-repeat;\n  color: white;\n  /* background-image: url(\"/img/dc-logo-bg.png\"); */\n}\n.vg-wrapper-top .vg-container[data-v-61a7c374] {\n  display: flex;\n  flex-wrap: wrap;\n}\n.vg-wrapper-lists[data-v-61a7c374] {\n  display: flex;\n  width: 63%;\n  height: 350px;\n}\n.vg-logo-bg-right[data-v-61a7c374] {\n  min-width: 350px;\n  width: 37%;\n  height: 350px;\n  background-image: url(\"/img/dc-logo-bg.png\");\n  background-size: 100%;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n.vg-container-lists[data-v-61a7c374] {\n  margin-right: 5.5rem;\n  margin-bottom: 2.5rem;\n}\n.vg-container-lists ul li[data-v-61a7c374] {\n  margin-bottom: 0.5rem;\n}\n.vg-container-lists ul li a[data-v-61a7c374] {\n  color: white;\n  opacity: 0.5;\n}\n.vg-container-lists ul li a[data-v-61a7c374]:hover {\n  opacity: 1;\n}\n.vg-container-lists ul li .vg-title-list[data-v-61a7c374] {\n  display: inline-block;\n  margin-bottom: 0.8rem;\n  text-transform: uppercase;\n  font-weight: 800;\n  opacity: 1;\n}\n.vg-copyright-cookies a[data-v-61a7c374],\n.vg-copyright-cookies p[data-v-61a7c374] {\n  opacity: 0.5;\n  color: white;\n}\n.vg-copyright-cookies a[data-v-61a7c374]:hover,\n.vg-copyright-cookies p[data-v-61a7c374]:hover {\n  opacity: 1;\n}\n\n/* wrapper bottom */\n.vg-wrapper-bottom[data-v-61a7c374] {\n  min-height: 100px;\n  background-color: #303030;\n}\n.vg-wrapper-bottom .vg-container[data-v-61a7c374] {\n  display: grid;\n  grid-template-columns: 1fr;\n  grid-template-rows: repeat(2, 125px);\n}\n.vg-wrapper-bottom .vg-container .left-content[data-v-61a7c374],\n.vg-wrapper-bottom .vg-container .right-content[data-v-61a7c374] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.left-content button[data-v-61a7c374] {\n  cursor: pointer;\n  font-size: 1.3rem;\n  color: white;\n  font-weight: 600;\n  background-color: #303030;\n  border: 2px solid #0282f9;\n  padding: 15px 7px;\n}\n.right-content div[data-v-61a7c374] {\n  margin-right: 0.8rem;\n}\n.right-content #follow-us[data-v-61a7c374] {\n  color: #0282f9;\n  font-weight: 700;\n}\n@media all and (min-width: 600px) {\n.vg-wrapper-bottom .vg-container[data-v-61a7c374] {\n    grid-template-columns: repeat(2, 1fr);\n    grid-template-rows: 250px;\n}\n.vg-wrapper-bottom .vg-container .left-content[data-v-61a7c374] {\n    justify-content: flex-start;\n}\n.vg-wrapper-bottom .vg-container .right-content[data-v-61a7c374] {\n    justify-content: flex-end;\n}\n}", ""]);
 
 // exports
 
@@ -1843,6 +1895,71 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("div", [
               _c("a", { attrs: { href: "#" } }, [_vm._v("Cookies Settings")])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "vg-wrapper-bottom" }, [
+        _c("div", { staticClass: "vg-container" }, [
+          _c("div", { staticClass: "left-content" }, [
+            _c("button", [_vm._v("SIGN UP NOW!")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "right-content" }, [
+            _c("div", [
+              _c("a", { attrs: { href: "#", id: "follow-us" } }, [
+                _vm._v("FOLLOW US")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: {
+                    src: "/img/footer-facebook.png",
+                    alt: "facebook-logo"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: { src: "/img/footer-twitter.png", alt: "twitter-logo" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: { src: "/img/footer-youtube.png", alt: "youtube-logo" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: {
+                    src: "/img/footer-pinterest.png",
+                    alt: "pinterest-logo"
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c("a", { attrs: { href: "#" } }, [
+                _c("img", {
+                  attrs: {
+                    src: "/img/footer-periscope.png",
+                    alt: "periscope-logo"
+                  }
+                })
+              ])
             ])
           ])
         ])

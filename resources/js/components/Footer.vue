@@ -123,6 +123,58 @@
                 </div>
             </div>
         </div>
+        <div class="vg-wrapper-bottom">
+            <div class="vg-container">
+                <div class="left-content">
+                    <button>SIGN UP NOW!</button>
+                </div>
+                <div class="right-content">
+                    <div>
+                        <a href="#" id="follow-us">FOLLOW US</a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="/img/footer-facebook.png"
+                                alt="facebook-logo"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="/img/footer-twitter.png"
+                                alt="twitter-logo"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="/img/footer-youtube.png"
+                                alt="youtube-logo"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="/img/footer-pinterest.png"
+                                alt="pinterest-logo"
+                            />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img
+                                src="/img/footer-periscope.png"
+                                alt="periscope-logo"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -134,7 +186,7 @@ export default {
 
 <style lang="scss" scoped>
 .vg-wrapper-top {
-    padding: 4em;
+    padding: 4em 0;
     background-image: url("/img/footer-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,11 +205,13 @@ export default {
 }
 
 .vg-logo-bg-right {
+    min-width: 350px;
     width: 37%;
     height: 350px;
     background-image: url("/img/dc-logo-bg.png");
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .vg-container-lists {
@@ -192,6 +246,56 @@ export default {
         color: white;
         &:hover {
             opacity: 1;
+        }
+    }
+}
+
+/* wrapper bottom */
+
+.vg-wrapper-bottom {
+    min-height: 100px;
+    background-color: #303030;
+    .vg-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 125px);
+        .left-content,
+        .right-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.left-content button {
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #303030;
+    border: 2px solid #0282f9;
+    padding: 15px 7px;
+}
+
+.right-content div {
+    margin-right: 0.8rem;
+}
+
+.right-content #follow-us {
+    color: #0282f9;
+    font-weight: 700;
+}
+
+@media all and (min-width: 600px) {
+    .vg-wrapper-bottom .vg-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 250px;
+        .left-content {
+            justify-content: flex-start;
+        }
+        .right-content {
+            justify-content: flex-end;
         }
     }
 }

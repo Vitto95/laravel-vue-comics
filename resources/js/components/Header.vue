@@ -5,7 +5,9 @@
                 <i class="fas fa-bars"></i>
             </div>
             <div class="vg-logo">
-                <img src="/img/dc-logo.png" alt="dc-logo" />
+                <a href="/">
+                    <img src="/img/dc-logo.png" alt="dc-logo" />
+                </a>
             </div>
             <div class="vg-links">
                 <ul>

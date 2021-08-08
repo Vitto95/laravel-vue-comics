@@ -8,11 +8,16 @@ use Illuminate\Http\Request;
 
 class ComicController extends Controller
 {
-    public function index(){
+    public function index()
+    {
+        $comics = Comic::all();
+        /* file JSON da richiamare con Axios */
+        return response()->json($comics);
+    }
 
-      $comics = Comic::all();
-      /* file JSON da richiamare con Axios */
-      return response()->json($comics);
-
+    public function show($slug)
+    {
+        $comic = Comic::where('slug', $slug)->first();
+        return response()->json($comic);
     }
 }

@@ -1,6 +1,8 @@
 <template>
     <div class="vg-card-outer">
-        <img :src="comicObj.image" :alt="comicObj.slug" />
+        <router-link :to="{ name: 'detail', params: { comicSlug } }">
+            <img :src="comicObj.image" :alt="comicObj.slug" />
+        </router-link>
         <h4>{{ comicObj.title }}</h4>
     </div>
 </template>
@@ -11,9 +13,16 @@ export default {
     props: {
         comicObj: Object
     },
+    data() {
+        return {
+            comicSlug: this.comicObj.slug
+        };
+    },
     created() {
         console.log("Oggetto props:");
         console.log(this.comicObj);
+        console.log("Slug Comic");
+        console.log(this.comicSlug);
     }
 };
 </script>

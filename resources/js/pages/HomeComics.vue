@@ -49,6 +49,7 @@ export default {
 <style lang="scss" scoped>
 main {
     background-color: #1c1c1c;
+    padding-top: 20px;
 }
 
 .vg-container {

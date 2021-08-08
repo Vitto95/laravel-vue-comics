@@ -18,4 +18,5 @@ Route::namespace('Api')
     ->name('api.')
     ->group(function(){
       Route::get('comics', 'ComicController@index')->name('comics');
+      Route::get('comics/{slug}', 'ComicController@show')->name('comics.show');
     });

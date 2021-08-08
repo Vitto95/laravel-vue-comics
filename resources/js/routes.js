@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 import HomeComics from "./pages/HomeComics.vue";
+import ComicDetail from "./pages/ComicDetail.vue";
 
 const router = new VueRouter({
     mode: "history",
@@ -13,6 +14,11 @@ const router = new VueRouter({
             path: "/",
             name: "home",
             component: HomeComics
+        },
+        {
+            path: "/:comicSlug",
+            name: "detail",
+            component: ComicDetail
         }
     ]
 });
